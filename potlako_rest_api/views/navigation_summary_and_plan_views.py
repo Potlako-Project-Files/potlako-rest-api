@@ -5,5 +5,5 @@ from ..serializers import NavigationSummaryAndPlanSerializers
 
 
 class NavigationSummaryAndPlanView(viewsets.ModelViewSet):
-    queryset = NavigationSummaryAndPlan.objects.all().order_by('diagnostic_plan')
+    queryset = NavigationSummaryAndPlan.objects.all().order_by('subject_identifier')
     serializer_class = NavigationSummaryAndPlanSerializers

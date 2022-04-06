@@ -13,12 +13,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='potlako-rest-api',
-    version='0.0.1',
+    version='0.0.2',
     author=u'BHP Software Engineering & Data Management Center',
     author_email='se-dmc@bhp.org.bw',
     packages=find_packages(),
     include_package_data=True,
-    # url='https://github.com/potlako-plus/potlako-metadata-rules',
+    url='https://github.com/potlako-plus/potlako-rest-api.git',
     license='GPL license, see LICENSE',
     description='potlako rest api for simple crude functions',
     long_description=README,
