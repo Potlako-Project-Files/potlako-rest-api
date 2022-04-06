@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django_crypto_fields.apps.AppConfig',
     'rest_framework',
+    'corsheaders',
     'edc_action_item.apps.AppConfig',
     'edc_base.apps.AppConfig',
     'edc_consent.apps.AppConfig',
