@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.urls import include, path
 from rest_framework import routers
+
 from . import views
 
 router = routers.DefaultRouter()
 router.register(r'navigation_summary_and_plan', views.NavigationSummaryAndPlanView)
+router.register(r'evaluation_timeline', views.EvaluationTimelineView)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -27,4 +29,4 @@ app_name = 'potlako_rest_api'
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
-]
+    ]
