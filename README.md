@@ -1,1 +1,1 @@
-# potlako-rest-api
+# potlako-rest
